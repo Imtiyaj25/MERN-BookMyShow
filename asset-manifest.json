@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-EntertainmentApp/static/css/main.d680b7d2.css",
+    "main.js": "/React-EntertainmentApp/static/js/main.1808a236.js",
+    "index.html": "/React-EntertainmentApp/index.html",
+    "main.d680b7d2.css.map": "/React-EntertainmentApp/static/css/main.d680b7d2.css.map",
+    "main.1808a236.js.map": "/React-EntertainmentApp/static/js/main.1808a236.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d680b7d2.css",
+    "static/js/main.1808a236.js"
+  ]
+}
