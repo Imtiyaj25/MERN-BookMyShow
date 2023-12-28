@@ -1,0 +1,48 @@
+.header {
+    padding: .5rem 0;
+    width: 100%;
+    align-items: center;
+    background: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo {
+    color: aliceblue;
+    font-size: 25px;
+    font-style: normal;
+    list-style: none;
+}
+.mid {
+    color: yellow;
+}
+.last {
+    color: crimson;
+}
+
+a > span{
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+a > span:hover {
+    color: red;
+}
+
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
+
