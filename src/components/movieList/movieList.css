@@ -12,3 +12,27 @@ margin:  2.5rem;
     flex-wrap: wrap ;
     justify-content: center;
 }
+
+
+/* Media queries for responsive design */
+@media only screen and (min-width: 600px) {
+    .movie__list {
+        padding: 0 2rem 3rem 2rem; /* Adjust padding for medium-sized screens */
+    }
+
+    .list__title {
+        font-size: 1.75rem; /* Original font size for medium-sized screens */
+        margin: 2.5rem; /* Original margin for medium-sized screens */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .movie__list {
+        padding: 0 3rem 3rem 3rem; /* Original padding for larger screens (tablets) */
+    }
+
+    .list__title {
+        font-size: 2rem; /* Increase font size for larger screens (tablets) */
+        margin: 3rem; /* Increase margin for larger screens (tablets) */
+    }
+}

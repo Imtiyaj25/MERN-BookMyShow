@@ -60,3 +60,31 @@
     font-size: .75rem;
     margin-bottom: 0.25rem;
 }
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .cards {
+        min-width: 100%;
+        margin: 0.19rem 0;
+    }
+
+    .cards__overlay {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cards {
+        height: auto;
+    }
+
+    .cards__img {
+        height: 150px; /* Adjust the height for smaller screens */
+    }
+
+    .cards__overlay {
+        height: auto;
+    }
+}

@@ -1,20 +1,31 @@
-import React from "react"
-import "./Header.css"
-import { Link } from "react-router-dom"
+import React, { useState } from 'react';
+import './Header.css';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="headerLeft">
-                <p href="/" className="logo"><h2><b>Enter<span className="mid">10</span><span className="last">ment</span></b></h2></p>
-            </div>
-            <div className="headerRight">
-                <Link to="/movies/popular" style={{textDecoration: "none"}}><span>Popular</span></Link>
-                <Link to="/movies/top_rated" style={{textDecoration: "none"}}><span>Top Rated</span></Link>
-                <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>Upcoming</span></Link>
-            </div>
-        </div>
-    )
-}
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Header
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a href="/React-EntertainmentApp" className="logo"><b>Enter<span>10</span>ment</b></a>
+        <button className={`menu-button ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
+        <ul className={`menu ${isOpen ? 'open' : ''}`}>
+          <li><Link to="/movies/popular">Popular</Link></li>
+          <li><Link to="/movies/top_rated">Top Rated</Link></li>
+          <li><Link to="/movies/upcoming">Upcoming</Link></li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
