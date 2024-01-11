@@ -31,10 +31,14 @@ Follow these steps to run the project locally:
    git clone https://github.com/imtiyaj25/React-EntertainmentApp.git
 
 
-## Install dependencies:
+2. Install dependencies:
 
-- **npm install
-- **Run the app:
 
-- **npm run dev
-The app will be available at http://localhost:3000.
+   ```bash
+   npm install
+   Run the app:
+
+   npm run dev
+
+
+ The app will be available at http://localhost:3000.
